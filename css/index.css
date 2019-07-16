@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5 {
 
 
 html {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 *, *:before, *:after {
 	box-sizing: inherit;
@@ -239,18 +239,24 @@ h2 {
 }
 
 /* Responsive Design */
+
 /* Tablet Design */
+
 @media screen and (max-width: 800px) {
     .container {
         width: 100%;
         /* background: lightblue; */
     }
+
+    /* HEADER */
+
     .right {
         display: none;
     }
     .navigation {
         display: flex;
         flex-direction: column-reverse; 
+        justify-content: space-around;
         width: 80%;
         margin: 0 auto;
         margin-bottom: 10px;
@@ -260,23 +266,33 @@ h2 {
         /* border: 1px solid green; */
         display: flex;
         margin: 0 auto;
-        padding-bottom: 20px;
+        padding-bottom: 25px;
+        width: 175px;
     }
+    h2 h3{
+        font-size: 16px;
+    }
+    
+
     .innovation {
-        padding-top: 0px;
+        padding-top: 30px;
     }
    hr {
        border: 1px solid black;
+       margin-bottom: 20px;
    }
    button {
        border: 1px solid black;
    }
+   /* Top 2 paragraphs */
    .section2 {
        margin: 10px;
    }
    .middle-img {
        margin: 0px 10px;
    }
+
+   /* Bottom 3 paragraphs */
    .section3 {
        margin: 10px;
    }
@@ -288,10 +304,46 @@ h2 {
 /* Mobile Styles */
 @media screen and (max-width: 500px) {
     .container {
-        width: 500px;
+        width: 475px;
+        /* border: 1px solid green; */
     }
+    /* Nav/Header Content */
+
     .navigation nav a {
         display: flex;
-        /* justify-content: center; */
+        justify-content: center;
+    }
+    a {
+        width: 100%;
+        padding: 10px;
+        border-bottom: 1px solid black;
+        /* border: 1px solid blue; */
+    }
+    .navigation {
+        margin: 0 auto;
+        /* border: 1px solid red; */
+    }
+    
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .heading {
+        border-bottom: none;
+    }
+    button a{
+        padding: 30px;
+        height: 15px;
+    }
+
+    /* Text content */
+    .section2 {
+        display: block;
+    }
+    .section3 {
+        display: block;
+        border-bottom: 2px solid black;
     }
 }
