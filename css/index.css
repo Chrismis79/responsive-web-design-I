@@ -274,8 +274,7 @@ h2 {
     }
     h2 h3{
         font-size: 16px;
-    }
-    
+    }  
 
     .innovation {
         padding-top: 30px;
@@ -287,6 +286,7 @@ h2 {
    button {
        border: 1px solid black;
    }
+   
    /* Top 2 paragraphs */
    .section2 {
        margin: 10px;
@@ -379,5 +379,23 @@ h2 {
     }
     ul li {
         list-style-position: inside;
+    }
+}
+
+/* Mobile Services Responsive Design */
+@media screen and (max-width:500px) {
+    .container {
+        width: 500px;
+    }
+    .services .card{
+        flex-direction: column;
+        justify-content: center;
+        /* border: 1px solid green; */
+    }
+    .card {
+        width: 70%;
+    }
+    footer {
+        margin: 100px;
     }
 }
