@@ -172,6 +172,9 @@ p {
 	text-align: center;
 	margin-bottom: 50px;
 }
+
+
+
 /* Services Page Starts Here */
 
 .services-header-img {
@@ -345,5 +348,36 @@ h2 {
     .section3 {
         display: block;
         border-bottom: 2px solid black;
+    }
+}
+
+/* Services pg responsive design */
+
+@media screen and (max-width: 800px) {
+    .container {
+        width: 800px;
+    }
+    .top-paragraph {
+        /* border: 1px solid red; */
+        width: 90%;
+        padding: 10px;
+        margin: 0 auto;
+    }
+    .services {
+        justify-content: center;
+    }
+    .card {
+        padding: 10px;
+        margin: 15px;
+        width: 40%;
+    }
+    .services-secondary {
+        justify-content: center;
+    }
+    .services-info-img {
+        display: none;
+    }
+    ul li {
+        list-style-position: inside;
     }
 }
